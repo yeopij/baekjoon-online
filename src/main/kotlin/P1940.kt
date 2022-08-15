@@ -1,5 +1,3 @@
-package doit
-
 import java.util.*
 
 /**
