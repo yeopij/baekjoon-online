@@ -30,8 +30,6 @@ fun main(args: Array<String>) {
 
 	val ngeMap = mutableMapOf<Int, Int>()
 	nums.forEachIndexed { index, value ->
-		if (stack.isNotEmpty() && stack.peek().value < value) {
-		}
 		while (stack.isNotEmpty() && stack.peek().value < value) {
 			ngeMap[stack.pop().index] = value
 		}
