@@ -1,7 +1,6 @@
 package graph
 
 import java.util.*
-import kotlin.math.sqrt
 
 /**
  * 트리의 지름

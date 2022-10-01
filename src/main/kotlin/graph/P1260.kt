@@ -1,7 +1,6 @@
 package graph
 
 import java.util.*
-import kotlin.math.sqrt
 
 /**
  * DFS와 BFS
@@ -18,7 +17,7 @@ fun main() {
 	val edgeCount = st.nextToken().toInt()
 	val startNode = st.nextToken().toInt()
 
-	var nodeList = mutableMapOf<Int, MutableList<Int>>()
+	val nodeList = mutableMapOf<Int, MutableList<Int>>()
 
 	(1..edgeCount).forEach {
 		st = StringTokenizer(reader.readLine(), " ")
@@ -47,7 +46,7 @@ fun dfs(nodeList: Map<Int, List<Int>>, node: Int, visited: BooleanArray): List<I
 }
 
 fun bfs(nodeList: Map<Int, List<Int>>, node: Int, visited: BooleanArray): List<Int> {
-	var results = mutableListOf(node)
+	val results = mutableListOf(node)
 	val queue = ArrayDeque(nodeList[node]?.sorted() ?: emptyList())
 	visited[node] = true
 
